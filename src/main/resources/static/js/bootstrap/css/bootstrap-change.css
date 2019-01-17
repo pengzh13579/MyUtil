@@ -1,0 +1,391 @@
+html{
+    font-size:13px;
+}
+body{
+	font-family:tahoma,arial,verdana,sans-serif;
+	font-size:13px;
+}
+.modal-header{
+	padding:5px;
+}
+.modal-footer{
+	padding:5px;
+}
+.btn{
+	/*padding:5px 5px;*/
+}
+.btn-primary, .btn-primary:focus {
+    font-color:#FFFFFF;
+    background-color:#3D4A53;
+    border-color:#3D4A53;
+    padding:3px 15px;
+    border-radius:0px;
+    min-width: 70px;
+}
+.btn-primary:focus {
+    outline: none;
+}
+.btn-group-justified {
+    border-collapse: collapse;
+    margin-top:5px;
+}
+.label-control{
+    font-size:14px;
+    font-weight:normal;
+}
+.form-group{
+	margin-bottom:5px;
+}
+.nav-tabs > li.active > a{
+	padding:5px 10px;
+	background-color:#DCF4D4;
+	margin-right:0px;
+    border-radius: 0px;
+    font-size:16px;
+    /*border-color:#9CC5B8;*/
+    color:#00563C;
+    font-weight:bold;
+}
+.nav-tabs >li.active > a:hover{
+    background-color:#DCF4D4;
+}
+.nav-tabs > li > a{
+    padding:5px 10px;
+    background-color:#EAEAEA;
+    margin-right:0px;
+    border-radius: 0px;
+    font-size:16px;
+    /*border-color:#B6C0BD;*/
+    color:#00563C;
+}
+.nav-tabs >li> a:hover{
+    background-color:#DCF4D4;
+    color:#00563C;
+}
+.panel-body{
+	padding:0px;
+}
+.tab-content{
+	padding:0px;
+	border:1px solid #ddd;
+	border-top:none;
+}
+.table > tbody > tr > td, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > td, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > thead > tr > th{
+	padding:3px;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover{
+	background-color:rgba(72, 141, 243, 0.33);
+}
+.panel {
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-heading{
+	padding:7px 5px 5px 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.panel-primary {
+    border-color: #CECDCD;
+}
+.panel-primary>.panel-heading {
+    background-color: #DCF4D4;
+    border-color: #9CC5B8;
+    border-width: 1px;
+    height: 34px;
+}
+.panel-title {
+    font-weight: bold;
+    color: #00563C;
+}
+.panel-footer{
+	padding:5px;
+}
+.button-group{
+	padding:2px;
+	background-color:#E5E8FB;
+	border:solid 1px #BBD6F9;
+}
+.badge,.panel-primary>.panel-heading .badge{
+    background-color:#DD2121;
+    color:#fff;
+    padding:2px 5px;
+}
+.table-scroll{
+	margin-bottom:10px;
+}
+.table-scroll .table{
+	margin-bottom:0px;
+}
+.panel-search{
+	margin-bottom:0px;
+    font-size:14px;
+}
+.modal-body{
+	max-height:500px;
+	overflow-y:auto;
+	padding:5px 15px;
+}
+.form-control{
+    height:inherit;
+    border-radius:0px;
+}
+.form-group-sm .form-control{
+    font-size:14px;
+	height:25px;
+	padding:2px 4px;
+    border-radius:0px;
+}
+.input-group{
+    margin-top:3px;
+    margin-bottom:6px;
+}
+.search-input-control{
+    border-right-width:0px;
+}
+.input-group-addon{
+    border-radius:0px;
+    font-size:16px;
+    color:#00563C;
+    background-color:#FFFFFF;
+    border-left-width:0px;
+    padding:6px 10px;
+}
+.form-group-sm .input-group-addon{
+	padding:2px 5px;
+}
+.form-horizontal .form-group-sm {
+	padding-top:3px;
+}
+thead tr{
+	background-color:#e5e5e5;
+}
+.navbar-inner {
+    background-color: #3D4A53;
+    /*background-image: linear-gradient(to bottom, #54b4eb, #2fa4e7);*/
+    background-repeat: repeat-x;
+    /*border: 1px solid #1990d5;
+    border-radius: 4px;*/
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    min-height: 50px;
+    border-radius: 0px;
+}
+
+.navbar .navbar-brand{
+    color:#fff;
+}
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover{
+    color:#fff;
+}
+.navbar .nav > .active > a{
+    color:#1684c2;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: #4d585f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    background-color: #4d585f;
+    border-radius:0px;
+}
+
+.dropdown-menu>li>a {
+    color:#ffffff;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: #00AA76;
+    /*background-image: linear-gradient(to bottom, #2fa4e7, #1a99e2);*/
+    background-repeat: repeat-x;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle {
+    background-color: #4d585f;
+    color: #fff;
+}
+ .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #1684c2;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    background-color: transparent;
+    color: #5e5e5e;
+}
+.type-primary .modal-header{
+	background-color:#00AA76;
+	color:#fff;
+}
+.type-primary .modal-header .close{
+	color:#fff;
+}
+.form-group-sm textarea.form-control{
+	height:auto;
+}
+/*设置弹窗样式*/
+.modal-content {
+    border-radius:0px;
+}
+/*设置按钮效果*/
+.btn-primary.active, .btn-primary:active, .btn-primary:hover{
+    color: #fff;
+    background-color: #00aa76;
+    border-color: #00aa76;
+}
+
+
+/*事件详情css设置*/
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.panel-body>.form-group> .col-sm-3,
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.panel-body>.form-group> .col-sm-6,
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.panel-body>.form-group> .col-sm-4 {
+    padding: 2px 0 2px 0;
+    text-align: right;
+}
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.panel-body>.form-group> .col-sm-9,
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.panel-body>.form-group>.col-sm-8, #eventDetailEvnLevel, #eventDetail_remark {
+    padding: 2px 0 2px 0;
+    text-align: left;
+}
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.button-group>.col-sm-4 {
+    padding: 25px 0 15px 0;
+    text-align: center;
+}
+#eventDetailForm >.container-fluid>.row-fluid>#eventDetail1>.button-group{
+    padding: 0 0 0 0;
+    border: 0;
+}
+
+/*事件确认当前事件css设置*/
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.panel-body>.form-group> .col-sm-3{
+    padding: 2px 0 2px 0;
+    text-align: right;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.panel-heading>.col-sm-6 {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.panel-body>.form-group> .col-sm-9,
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.panel-body>.form-group>.col-sm-8 {
+    padding: 2px 0 2px 0;
+    text-align: left;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.panel-body>.form-group> .col-sm-12 {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>#buttonDiv>.button-group {
+    padding: 0 0 0 0;
+    border: 0;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm1>.button-group>.col-sm-3 {
+    padding: 0 15px 15px 0;
+    text-align: right;
+}
+/*事件确认疑似重复事件css设置*/
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-body>.form-group> .col-sm-3,
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-body>.form-group>.col-sm-2{
+    padding: 2px 0 2px 0;
+    text-align: right;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-heading>.col-sm-6 {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-body>.form-group> .col-sm-9,
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-body>.form-group>.col-sm-8 {
+    padding: 2px 0 2px 0;
+    text-align: left;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.panel-body>.form-group> .col-sm-12 {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>#button-groupDiv>.button-group {
+    padding: 0 0 0 0;
+    border:0;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm2>.button-group>.col-sm-3 {
+    padding: 2px 0 15px 0px;
+    text-align: center;
+}
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm3>.form-group>.col-sm-8,
+#eventConfirmForm >.container-fluid>.row-fluid>#eventConfirm3>.form-group>.col-sm-4  {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+}
+/*预警确认当前预警css设置*/
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.panel-body>.form-group> .col-sm-3{
+    padding: 2px 0 2px 0;
+    text-align: right;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.panel-heading>.col-sm-6 {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.panel-body>.form-group> .col-sm-9,
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.panel-body>.form-group>.col-sm-8{
+    padding: 2px 0 2px 0;
+    text-align: left;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.panel-body>.form-group> .col-sm-12 {
+    padding: 30px 0 50px 0;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.button-group {
+    padding: 0 0 0 0;
+    border: 0;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn1>.button-group>.col-sm-3 {
+    padding: 0 15px 15px 0;
+    text-align: right;
+}
+/*预警确认疑似重复事件css设置*/
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-body>.form-group> .col-sm-3,
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-body>.form-group>.col-sm-2{
+    padding: 2px 0 2px 0;
+    text-align: right;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-heading>.col-sm-6 {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-body>.form-group> .col-sm-9,
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-body>.form-group>.col-sm-8 {
+    padding: 2px 0 2px 0;
+    text-align: left;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.panel-body>.form-group> .col-sm-12 {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.button-group {
+    padding: 0 0 0 0;
+    border:0;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.button-group>.col-sm-3,
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn2>.button-group>.col-sm-2 {
+    padding: 2px 0 15px 0px;
+    text-align: center;
+}
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn3>.form-group>.col-sm-8,
+#eventWarnForm >.container-fluid>.row-fluid>#eventWarn3>.form-group>.col-sm-4  {
+    padding: 2px 0 2px 0px;
+    text-align: left;
+
+}
