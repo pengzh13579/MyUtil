@@ -1,6 +1,7 @@
 package com.pzh.util.myutil.model;
 
 public class LunarInfo {
+
     // 生肖年
     private String animalYear;
     // 是否闰年

@@ -9,13 +9,16 @@ import java.io.InputStreamReader;
  */
 public class JavaVersion {
 
+    /***
+     * 获取java的版本,通过调用服务器命令脚本java -version来获取java的版本信息
+     * @return java的版本信息,与在命令行执行效果一致
+     */
     public static String version(){
-        StringBuilder sb = null;
         try {
+            // 调用服务器命令脚本
             Process p = Runtime.getRuntime().exec(new String[]{"java", "-version"});
-            InputStreamReader inputStreamReader = new InputStreamReader(p.getErrorStream());
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            sb = new StringBuilder();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+            StringBuilder sb = new StringBuilder();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 sb.append(line);
@@ -29,5 +32,5 @@ public class JavaVersion {
         }
         return "";
     }
-    
+
 }

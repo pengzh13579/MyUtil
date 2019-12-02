@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: MyUtil
+    profiles:
+        active: pro
+    thymeleaf:
+        prefix: classpath:/templates/
+        suffix: .html
+        mode: HTML5
+        encoding: UTF-8
+        #开发时关闭缓存,不然没法看到实时页面
+        cache: false
+    mvc:
+        favicon:
+            enabled: false
+server:
+    tomcat:
+        uri-encoding: UTF-8
+    port: 5050
+
+debug: true

@@ -1,0 +1,10 @@
+spring.profiles: dev
+spring.profiles.include: common
+
+log:
+    path:
+        all: c:/log/app.log
+        error: c:/log/error.log
+    level:
+        app: DEBUG
+        root: INFO

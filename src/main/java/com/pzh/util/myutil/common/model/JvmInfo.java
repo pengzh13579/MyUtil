@@ -49,7 +49,7 @@ public class JvmInfo {
 	private String home;
 
 	public double getTotalByte() {
-		return ArithmeticalMethodUtil.div(totalByte, (1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(totalByte, (1024 * 1024), 2).doubleValue();
 	}
 
 	public void setTotalByte(double totalByte) {
@@ -57,7 +57,7 @@ public class JvmInfo {
 	}
 
 	public double getMaxByte() {
-		return ArithmeticalMethodUtil.div(maxByte, (1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(maxByte, (1024 * 1024), 2).doubleValue();
 	}
 
 	public void setMaxByte(double maxByte) {
@@ -65,7 +65,7 @@ public class JvmInfo {
 	}
 
 	public double getFreeByte() {
-		return ArithmeticalMethodUtil.div(freeByte, (1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(freeByte, (1024 * 1024), 2).doubleValue();
 	}
 
 	public void setFreeByte(double freeByte) {
@@ -73,11 +73,11 @@ public class JvmInfo {
 	}
 
 	public double getUsedByte() {
-		return ArithmeticalMethodUtil.div(totalByte - freeByte, (1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(totalByte - freeByte, (1024 * 1024), 2).doubleValue();
 	}
 
 	public double getUsageByte() {
-		return ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(totalByte - freeByte, totalByte, 4), 100);
+		return ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(totalByte - freeByte, totalByte, 4).doubleValue(), 100).doubleValue();
 	}
 
 	public String getTotal() {

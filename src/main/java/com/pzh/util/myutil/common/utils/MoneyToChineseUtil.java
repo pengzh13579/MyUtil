@@ -1,12 +1,22 @@
 package com.pzh.util.myutil.common.utils;
 
+/***
+ * 数字金额大写转换
+ * @author pengzh
+ */
 public class MoneyToChineseUtil {
+
+    private MoneyToChineseUtil() {
+    }
 
     static String fraction[] = { "角", "分"};
     static String digit[] = { "零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"};
     static String unit[][] = { { "元", "万", "亿"}, { "", "拾", "佰", "仟"}};
-    /**
-     * 数字金额大写转换，思想先写个完整的然后将如零拾替换成零 要用到正则表达式
+
+    /***
+     * 数字金额大写转换
+     * @param n 数字金额
+     * @return 大写金额
      */
     public static String digitUppercase(double n) {
 

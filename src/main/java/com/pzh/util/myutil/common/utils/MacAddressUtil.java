@@ -5,7 +5,15 @@ import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/***
+ *
+ * @author pengzh
+ */
 public class MacAddressUtil {
+
+    private MacAddressUtil() {
+    }
+
     public static String callCmd(String[] cmd) {
         String result = "";
         String line = "";

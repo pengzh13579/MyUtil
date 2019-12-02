@@ -4,45 +4,35 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/***
+ * 数组工具类
+ * @author pengzh
+ */
 public class ArrayUtil {
 
-    /**
-     * 去掉数组中空项
-     *
-     * @param olds
-     * @return news
-     */
-    public static String[] trim(String[] olds) {
-        if (olds ==null ||olds.length == 0){
-            return olds;
-        }
-        List<String> list = new ArrayList<>();
-        for (String old : olds) {
-            if (old != null && !"".equals(old)) {
-                list.add(old);
-            }
-        }
-        String[] news = new String[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            news[i] = list.get(i);
-        }
-        return news;
+    private ArrayUtil() {
     }
 
-    /**
-     * 匹配字符出现次数
-     * @param srcText
-     * @param findText
-     * @return
+    /***
+     * 去掉数组中空项
+     * @param inArray 传入数组
+     * @return outArrays 传出非空数组
      */
-    public static int appearNumber(String srcText, String findText) {
-        int count = 0;
-        Pattern p = Pattern.compile(findText);
-        Matcher m = p.matcher(srcText);
-        while (m.find()) {
-            count++;
+    public static String[] trim(String[] inArray) {
+        if (inArray ==null || inArray.length == 0){
+            return inArray;
         }
-        return count;
+        List<String> list = new ArrayList<>();
+        for (String array : inArray) {
+            if (array != null && !"".equals(array)) {
+                list.add(array);
+            }
+        }
+        String[] outArrays = new String[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            outArrays[i] = list.get(i);
+        }
+        return outArrays;
     }
 
 }

@@ -14,9 +14,8 @@ import javafx.util.Pair;
 
 public class JvmState {
 
-    /**
+    /***
      * Jstat 模板方法
-     *
      * @param strings 命令
      * @return 集合
      */
@@ -41,7 +40,7 @@ public class JvmState {
         return list;
     }
 
-    /**
+    /***
      * 类加载信息
      * X轴为时间，Y轴为值的变化
      * @return
@@ -54,7 +53,7 @@ public class JvmState {
         return jvmStateClass;
     }
 
-    /**
+    /***
      * 堆内存信息
      * X轴为时间，Y轴为值的变化
      * @return
@@ -64,7 +63,7 @@ public class JvmState {
         return jvmState(new String[]{"jstat", "-gc", id});
     }
 
-    /**
+    /***
      * 堆内存百分比
      * 实时监控
      * @return
@@ -75,7 +74,7 @@ public class JvmState {
     }
 
 
-    /**
+    /***
      * 获取当前应用进程id
      * @return
      */
@@ -85,7 +84,7 @@ public class JvmState {
         return  pid;
     }
 
-    /**
+    /***
      * 执行jvm linux命令
      * @return
      */

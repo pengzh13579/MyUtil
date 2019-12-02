@@ -23,7 +23,7 @@ public class MemoryInfo {
 	private double free;
 
 	public double getTotal() {
-		return ArithmeticalMethodUtil.div(total, (1024 * 1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(total, (1024 * 1024 * 1024), 2).doubleValue();
 	}
 
 	public void setTotal(long total) {
@@ -31,7 +31,7 @@ public class MemoryInfo {
 	}
 
 	public double getUsed() {
-		return ArithmeticalMethodUtil.div(used, (1024 * 1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(used, (1024 * 1024 * 1024), 2).doubleValue();
 	}
 
 	public void setUsed(long used) {
@@ -39,7 +39,7 @@ public class MemoryInfo {
 	}
 
 	public double getFree() {
-		return ArithmeticalMethodUtil.div(free, (1024 * 1024 * 1024), 2);
+		return ArithmeticalMethodUtil.div(free, (1024 * 1024 * 1024), 2).doubleValue();
 	}
 
 	public void setFree(long free) {
@@ -47,7 +47,7 @@ public class MemoryInfo {
 	}
 
 	public double getUsage() {
-		return ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(used, total, 4), 100);
+		return ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(used, total, 4).doubleValue(), 100).doubleValue();
 	}
 
 	@Override

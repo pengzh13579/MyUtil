@@ -46,7 +46,7 @@ public class CpuInfo {
 	}
 
 	public double getTotal() {
-		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(total, 100), 2);
+		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(total, 100).doubleValue(), 2).doubleValue();
 	}
 
 	public void setTotal(double total) {
@@ -54,7 +54,7 @@ public class CpuInfo {
 	}
 
 	public double getSys() {
-		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(sys / total, 100), 2);
+		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(sys / total, 100).doubleValue(), 2).doubleValue();
 	}
 
 	public void setSys(double sys) {
@@ -62,7 +62,7 @@ public class CpuInfo {
 	}
 
 	public double getUsed() {
-		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(used / total, 100), 2);
+		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(used / total, 100).doubleValue(), 2).doubleValue();
 	}
 
 	public void setUsed(double used) {
@@ -70,7 +70,7 @@ public class CpuInfo {
 	}
 
 	public double getWait() {
-		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(wait / total, 100), 2);
+		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(wait / total, 100).doubleValue(), 2).doubleValue();
 	}
 
 	public void setWait(double wait) {
@@ -78,7 +78,7 @@ public class CpuInfo {
 	}
 
 	public double getFree() {
-		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(free / total, 100), 2);
+		return ArithmeticalMethodUtil.round(ArithmeticalMethodUtil.mul(free / total, 100).doubleValue(), 2).doubleValue();
 	}
 
 	public void setFree(double free) {

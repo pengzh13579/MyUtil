@@ -5,7 +5,6 @@ import com.pzh.util.myutil.common.model.JvmInfo;
 import com.pzh.util.myutil.common.model.MemoryInfo;
 import com.pzh.util.myutil.common.model.SystemFileInfo;
 import com.pzh.util.myutil.common.utils.ArithmeticalMethodUtil;
-import java.net.UnknownHostException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -19,25 +18,29 @@ import oshi.software.os.OSFileStore;
 import oshi.software.os.OperatingSystem;
 import oshi.util.Util;
 
+/***
+ * 获取系统相关信息,包含CPU/内存/硬盘等信息
+ */
 public class GetSystemInfo {
 
     private static final int OS_HI_WAIT_SECOND = 1000;
-    /**
+
+    /***
      * CPU相关信息
      */
     private CpuInfo cpu = new CpuInfo();
 
-    /**
+    /***
      * 內存相关信息
      */
     private MemoryInfo mem = new MemoryInfo();
 
-    /**
+    /***
      * JVM相关信息
      */
     private JvmInfo jvm = new JvmInfo();
 
-    /**
+    /***
      * 磁盘相关信息
      */
     private List<SystemFileInfo> sysFiles = new LinkedList<>();
@@ -74,8 +77,10 @@ public class GetSystemInfo {
         this.sysFiles = sysFiles;
     }
 
-    public void getSystemInfo() throws Exception
-    {
+    /***
+     * 获取系统相关信息,包含CPU/内存/硬盘等信息
+     */
+    public void getSystemInfo() {
         SystemInfo si = new SystemInfo();
         HardwareAbstractionLayer hal = si.getHardware();
 
@@ -87,7 +92,8 @@ public class GetSystemInfo {
 
         setSysFiles(si.getOperatingSystem());
     }
-    /**
+
+    /***
      * 设置CPU信息
      */
     private void setCpuInfo(CentralProcessor processor) {
@@ -112,7 +118,7 @@ public class GetSystemInfo {
         cpu.setFree(idle);
     }
 
-    /**
+    /***
      * 设置内存信息
      */
     private void setMemInfo(GlobalMemory memory) {
@@ -121,11 +127,10 @@ public class GetSystemInfo {
         mem.setFree(memory.getAvailable());
     }
 
-    /**
+    /***
      * 设置Java虚拟机
      */
-    private void setJvmInfo() throws UnknownHostException
-    {
+    private void setJvmInfo() {
         Properties props = System.getProperties();
         jvm.setTotalByte(Runtime.getRuntime().totalMemory());
         jvm.setMaxByte(Runtime.getRuntime().maxMemory());
@@ -137,11 +142,10 @@ public class GetSystemInfo {
         jvm.setHome(props.getProperty("java.home"));
     }
 
-    /**
+    /***
      * 设置磁盘信息
      */
-    private void setSysFiles(OperatingSystem os)
-    {
+    private void setSysFiles(OperatingSystem os) {
         FileSystem fileSystem = os.getFileSystem();
         OSFileStore[] fsArray = fileSystem.getFileStores();
         for (OSFileStore fs : fsArray)
@@ -156,7 +160,7 @@ public class GetSystemInfo {
             sysFile.setTotal(convertFileSize(total));
             sysFile.setFree(convertFileSize(free));
             sysFile.setUsed(convertFileSize(used));
-            sysFile.setUsage(ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(used, total, 4), 100));
+            sysFile.setUsage(ArithmeticalMethodUtil.mul(ArithmeticalMethodUtil.div(used, total, 4).doubleValue(), 100).doubleValue());
             sysFiles.add(sysFile);
         }
     }

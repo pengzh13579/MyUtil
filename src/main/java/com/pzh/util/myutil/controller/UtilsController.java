@@ -1,7 +1,7 @@
 package com.pzh.util.myutil.controller;
 
 import com.pzh.util.myutil.common.json.JsonModel;
-import com.pzh.util.myutil.common.utils.IpUtil;
+import com.pzh.util.myutil.common.utils.HttpUtil;
 import com.pzh.util.myutil.common.utils.MacAddressUtil;
 import com.pzh.util.myutil.common.utils.MoneyToChineseUtil;
 import com.pzh.util.myutil.model.ClientInfo;
@@ -36,7 +36,7 @@ public class UtilsController {
         JsonModel result = new JsonModel();
         result.setResult(true);
         ClientInfo clientInfo = new ClientInfo();
-        String ipAddress = IpUtil.getIpAddress(request);
+        String ipAddress = HttpUtil.getIpAddress(request);
         clientInfo.setIpAddress(ipAddress);
         clientInfo.setMacAddress(MacAddressUtil.getMacAddress(ipAddress));
         clientInfo.setUserAgent(request.getHeader("user-agent"));
